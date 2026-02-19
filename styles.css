@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 body {
 
-    background: url('52633a0f-4d66-4a77-836d-446d47d773be_rw_1920.jpg') repeat fixed 100%;
+    background: url('images/52633a0f-4d66-4a77-836d-446d47d773be_rw_1920.jpg') repeat fixed 100%;
     background-position: center;
     background-size: cover;
 
@@ -56,32 +57,6 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
-img.circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-img.box {
-    width:700px;
-    height: 150px;
-    border-style: solid;
-    object-fit: cover;
-}
-
-.Hello {
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-
-#contact  {
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
 section h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -100,6 +75,28 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Image Styles */
+img.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.box {
+    width:700px;
+    height: 150px;
+    border-style: solid;
+    object-fit: cover;
+}
+
+/* Centering content in sections */
+#hello, #contact, #about, #projects{
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 /* Mobile screen adjust*/
