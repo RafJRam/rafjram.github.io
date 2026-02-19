@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('organ-mountains.jpg');
+
+    background: url('52633a0f-4d66-4a77-836d-446d47d773be_rw_1920.jpg') repeat fixed 100%;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #00ff00;
     color: #333;
 }
 header {
-    background-color: #0077cc;
+    background-color: #4F242E;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -24,9 +30,14 @@ header p {
     margin-top: 0.5rem;
 }
 nav {
-    background: #0056a0;
-    padding: 0.5rem;
-    text-align: center;
+    background: #221D2D;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    min-height: 48px;
+    max-height: 80px;
 }
 nav a {
     color: white;
@@ -41,19 +52,68 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: 2rem auto;
-    background: white;
+    background: #DCD9B0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+img.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img.box {
+    width:700px;
+    height: 150px;
+    border-style: solid;
+    object-fit: cover;
+}
+
+.Hello {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+#contact  {
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 section h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-    color: #0077cc;
+    color: #896537;
 }
+
+section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3F1D23;
+}
+
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Mobile screen adjust*/
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto; 
+        padding: 1rem 0; 
+    }
+    nav a {
+        margin: 0.1rem 0;
+    }
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
 }
